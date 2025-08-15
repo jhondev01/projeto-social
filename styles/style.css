@@ -41,3 +41,22 @@ iframe#tela {
     width: 267px;
     height: 471px;
 }
+
+section#sociais {
+    text-align: right;
+}
+
+section#sociais img {
+    width: 70px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #00000050;
+    box-sizing: border-box; /* config da borda em hover fará tbm parte da caixa */
+}
+
+section#sociais img:hover {
+    border: 2px solid #ffffff70;
+    transform: translate(-3px, -3px); /*fica negativo pois está 3px para cima e 3px para esquerda*/
+    box-shadow: 5px 5px 10px #00000050; /* O efeito da sombra espalhando, ficando para trás, se era 2px então com o deslocamento de 3px fica 2px + 3px = 5px*/
+    transition: transform 0.2s, border 0.3s; /* Tempo do deslocamento da caixa em hover e da aparição da border (2px solid)*/
+}
